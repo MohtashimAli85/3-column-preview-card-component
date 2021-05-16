@@ -1,0 +1,98 @@
+:root {
+  /* Primary */
+  --brightOrange: hsl(31, 77%, 52%);
+  --darkCyan: hsl(184, 100%, 22%);
+  --veryDarkCyan: hsl(179, 100%, 13%);
+  /* Neutral */
+  --transparentWhite: hsla(0, 0%, 100%, 0.75); /* paragraph */
+  --veryLightGray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+  font-family: "Lexend Deca", sans-serif;
+  background-color: var(--veryLightGray);
+}
+.container {
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 89px 25px;
+}
+.card {
+  padding: 47px;
+}
+.container .one {
+  background-color: var(--brightOrange);
+}
+.container .two {
+  background-color: var(--darkCyan);
+}
+.container .three {
+  background-color: var(--veryDarkCyan);
+}
+.card .heading {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  color: var(--veryLightGray);
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 33px;
+}
+
+.card .details {
+  color: var(--transparentWhite);
+  font-size: 0.9rem;
+  margin: 28px 0;
+  line-height: 1.6;
+}
+.one a {
+  color: var(--brightOrange);
+}
+.two a {
+  color: var(--darkCyan);
+}
+.three a {
+  color: var(--veryDarkCyan);
+}
+
+.card a {
+  text-decoration: none;
+  font-weight: 400;
+  /* font-size: 1rem; */
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 100px;
+  padding: 13px 26px;
+  background-color: var(--veryLightGray);
+  border: none;
+}
+@media screen and (min-width: 400px) {
+  .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 918px;
+    margin: 89px 25px;
+    /* padding: 0; */
+  }
+  .card .details {
+    margin: 28px 0 82px;
+  }
+  .container .one {
+    background-color: var(--brightOrange);
+  }
+}
+@media screen and (max-width: 940px) {
+  .container {
+    /* padding: 0 25px; */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .container {
+    margin: 0 auto;
+    margin-top: 89px;
+  }
+}
