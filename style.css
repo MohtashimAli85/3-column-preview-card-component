@@ -58,7 +58,24 @@ body {
 .three a {
   color: var(--veryDarkCyan);
 }
-
+.one a:hover {
+  background-color: var(--brightOrange);
+  border: 1px solid white;
+  color: white;
+  transition: 0.2s;
+}
+.two a:hover {
+  background-color: var(--darkCyan);
+  border: 1px solid white;
+  color: white;
+  transition: 0.2s;
+}
+.three a:hover {
+  background-color: var(--veryDarkCyan);
+  border: 1px solid white;
+  color: white;
+  transition: 0.2s;
+}
 .card a {
   text-decoration: none;
   font-weight: 400;
